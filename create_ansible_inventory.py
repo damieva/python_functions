@@ -1,3 +1,5 @@
+import sys, json
+
 def create_inventory(inventory):
     result = '---\n'
     identation= ''
@@ -69,4 +71,12 @@ inventory_2 = [
     }
 ]
 
-print(create_inventory(inventory_2))
+
+file = open("inventory.txt", "r")
+
+contents = file.read()
+
+print(contents)
+
+#print(create_inventory(inventory_2))
+#print(sys.argv[1])
