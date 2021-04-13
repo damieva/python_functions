@@ -21,7 +21,7 @@ def create_basic_inventory(*args):
         'vars': vars
     }
 # Mapping key:value page vble to template and writing in a file
-    f = open("inventory.yml", "w")
+    f = open("../inventory.yml", "w")
     f.write(template.render(page=page))
     f.close()
 
