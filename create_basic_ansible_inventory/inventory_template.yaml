@@ -1,0 +1,8 @@
+---
+all:
+    hosts: 
+      {% for item in page.hosts %}{{item}}:
+      {% endfor %}
+    vars: 
+      {% for key, value in page.vars.items() %}{{key}}: {{value}}
+      {% endfor %}
