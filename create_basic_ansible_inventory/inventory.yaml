@@ -1,0 +1,10 @@
+---
+all:
+    hosts: 
+      0.0.0.0:
+      8.8.8.8:
+      
+    vars: 
+      ssh_user: "{{ ssh_root_password }}"
+      python_version: 3.5.1
+      

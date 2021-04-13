@@ -20,8 +20,10 @@ def create_basic_inventory(*args):
         'hosts': hosts,
         'vars': vars
     }
-    # Mapping key:value page vble to template and writing in a file
-    print(template.render(page=page))
+# Mapping key:value page vble to template and writing in a file
+    f = open("inventory.yaml", "w")
+    f.write(template.render(page=page))
+    f.close()
 
 if __name__ == "__main__":
     create_basic_inventory(*sys.argv[1:])
