@@ -27,3 +27,6 @@ def create_basic_inventory(*args):
 
 if __name__ == "__main__":
     create_basic_inventory(*sys.argv[1:])
+
+# Command-line example:
+    # /usr/bin/python3 /home/denis/Documentos/python_functions/create_basic_ansible_inventory/create_ansible_inventory.py hosts="0.0.0.0,8.8.8.8" ssh_user='"{{ ssh_root_password }}"' python_version="3.5.1"
